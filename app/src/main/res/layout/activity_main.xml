@@ -8,10 +8,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_columnWeight="2"
     tools:context="com.example.manasaa.task_fragment.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/addButton"
+        android:text="@string/addbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:onClick="selectFrag"/>
+    <Button
+        android:id="@+id/subButton"
+        android:text="SUB"
+        android:layout_toRightOf="@id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectFrag"/>
+
+
+    <fragment
+        android:name="com.example.manasaa.task_fragment.AddFragment"
+        android:id="@+id/fragment_place"
+        android:layout_below="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></fragment>
+
+
 </RelativeLayout>

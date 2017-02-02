@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manasaa.task_fragment.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBSTRACTION" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@+id/Maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/var1"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number 1" />
+
+    <EditText
+        android:id="@+id/var2"
+        android:layout_below="@+id/var1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:layout_below="@+id/var1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number 2" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_below="@+id/var2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+
+</RelativeLayout>
