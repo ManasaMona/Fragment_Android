@@ -29,7 +29,7 @@
     <fragment
         android:name="com.example.manasaa.task_fragment.AddFragment"
         android:id="@+id/fragment_place"
-        android:layout_below="@+id/addButton"
+        android:layout_below="@+id/subButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></fragment>
 
